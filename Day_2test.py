@@ -89,9 +89,66 @@ print(fun[-3:])
 print(fun[-4:])
 print(fun[-5:])
 
-##
+#list
+
+cities = ["chennai","madurai","trichy"]
+val=[3,4,5,6]
+cities[2]="tiruchy"
+print(cities[2])
+
+#append adding at the end
+
+cities.append("lawspet")
+
+print(cities)
 
 
+#insert
+
+cities.insert(1,"thanja")
+print(cities)
+
+#delete
+del cities[2]
+print(cities)
+
+#pop
+deleted=cities.pop()
+print(deleted+"has been deleted")
+print(cities)
+
+
+city_del ="tiruchy"
+cities.remove(city_del)
+print(cities)
+
+cities.sort()
+print(cities)
+
+cities.reverse()
+print(cities)
+
+print(len(cities))
+
+cities.append("chennai")
+print(cities)
+
+#while loop
+letter=' '
+while not letter.isalpha():
+    letter=input("enter an alphabet ")
+    print("you have entered"+letter)
+
+num=1
+while num<=100:
+    print(num)
+    num+=1 #num=num+1
+
+
+
+#for lool
+for i in range (1,101):
+    print(i)
 
 
 
