@@ -146,9 +146,147 @@ while num<=100:
 
 
 
-#for lool
+#for loop
 for i in range (1,101):
     print(i)
+else:
+    print("over")
+
+#list ranging
+list(range(1,10))
+print(list(range(1,10)))
+
+
+#guess the number game
+
+import random
+
+num = random.randint(1,20)
+guess = int(input("guess the number between 1 to 20"))
+while num!=guess:
+    if num>guess:
+        print("high")
+    else:
+        print("low")
+    guess = int(input("guess again"))
+print("you won")
+
+#nested loop
+for i in range(1,3):
+    for j in range(1,11):
+        print(j,end="")
+    print('')
+
+
+#break statement
+
+print("list of numbers, to exit press *")
+llist=[]
+while True:
+    inp=input()
+    if inp=="*":
+        break
+    llist.append(int(inp))
+print(llist)
+
+
+#countinue
+
+kite = "N,I,R,M,A,L"
+kite2 = ''
+for i in kite:
+    if i == ',':
+        continue
+    kite2 += i   # changed variable name here
+print(kite2)
+
+
+#pass do nothing
+
+ite = "N,I,R,M,A,L"
+ite2 = ''
+for i in ite:
+    if i == ',':
+        pass
+    else:
+        ite+=i
+
+
+#split and join
+
+htr="abc def ghi jkl mno"
+split_list=htr.split('')
+print(split_list)
+
+htr_joined='-'.join(split_list)
+
+
+#copy
+india=("tn","kl","ka","ap")
+#india_states=("pondy","lawspet","bahour","kathirka")
+import copy
+india_states=copy.deepcopy(india)
+
+#tuples or immutable cant be changed
+
+tup=(2,3,4)
+print(tup)
+
+#tup[1]=5
+
+tup=(3,4,5,5)
+print(tup)
+print(tup[1])
+print(tup.count(5))
+
+for i in tup:
+    print(i)
+
+if 3 in tup:
+    print('yes')
+
+
+
+#dictionary
+
+user ={'name':"Ram", 'age':23, 'gender':"male"}
+print(user['name'])
+
+user['city']="chennai"
+print(user)
+
+user['age']=26
+print(user)
+
+del user['gender']
+print(user)
+
+
+ #set
+
+colors={'blue','green','red'}
+print(colors)
+
+color_list=list(colors)
+print(color_list)
+
+
+#string formatting
+
+name='hari'
+like1='apple'
+like2='banana'
+
+text ='{} like {} and {}'
+print(text.format(name,like1,like2))
+
+
+
+
+
+
+
+
 
 
 
